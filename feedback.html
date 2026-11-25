@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Student Portal-Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Submit Feedback</h1>
+ <nav>
+    <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="profile.html">👤 Profile</a></li>
+        <li><a href="courses.html">📚 Courses</a></li>
+        <li><a href="feedback.html">💬 Feedback</a></li>
+        <li><a href="grades.html">📊 Grades</a></li>
+        <li><a href="contact.html">📩 Contact Us</a></li> 
+    </ul>
+ </nav>
+</header>
+  <hr>
+<main>
+    <section>
+        <h2>Course &amp; Portal Feedback Form</h2>
+       <form action="#" method="post">
+         <p>
+            <label for="full-name">Full Name:</label><br>
+            <input type="text" id="full-name" name="full_name" required>
+        </p>
+        <p>
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" required>
+        </p> 
+        <p>
+        <label for="category">Feedback Category:</label><br>
+        <select id="category" name="category">
+        <option value="course_content">Course Content</option>
+        <option value="portal_bug">Portal Bug/Technical Issue</option>
+        <option value="instructor">Instructor Feedback</option>
+        <option value="general">General Suggestion</option>
+    </select>
+        </p>
+        <fieldset>
+          
+            <legend>Overall Rating</legend>
+             <input type="radio" id="rate5" name="rating" value="5">
+             <label for="rate5">5 - Excellent</label><br>
+
+           <input type="radio" id="rate4" name="rating" value="4">
+           <label for="rate4">3 - Good</label><br>
+
+          <input type="radio" id="rate2" name="rating" value="2">
+          <label for="rate2">2 - Needs Improvement</label><br>
+
+         <input type="radio" id="rate1" name="rating" value="1">
+         <label for="rate1">1 - Poor</label>
+    </fieldset>
+        <p>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            <label for="newsletter">Receive portal updates via email</label>
+        </p>
+          <p>
+            <label for="comments">Your Comments:</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Type your message here"></textarea>
+          </p>
+             <p>
+                <button type="submit">Submit Feedback</button>
+                <button type="reset">Reset Form</button>
+                </p>
+        </form>
+    </section>
+</main>
+<hr>
+   <footer>
+        <p>&copy; 2026 Student Portal System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
